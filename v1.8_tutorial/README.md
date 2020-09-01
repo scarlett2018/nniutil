@@ -19,11 +19,14 @@ NNI v1.8是 NNI 团队于2020年8月27日发布的最新版本，带来了训练
 
 NNI v1.8 改进了 Hyper-parameter 界面，使得其能够更好地支持嵌套搜索空间，并允许用户通过拖动每一个超参数的轴来改变这些轴的位置从而更直观地分析每个超参数对模型性能的影响。此外，还添加了对 Trial Job 列表进行分页等一些小的改动。
 
-## nnictl 与 nnicli
+## nnictl 与 NNI client (nnicli)
 
-* nnitl
+* nnictl
+
 nnictl 是 NNI 的命令行工具，提供了一系列命令用于控制 NNI 实验。NNI v1.8 新增了用于保存和加载实验的命令 `nnictl experiment save` 和 `nnictl experiment load` 。通过`nnictl experiment save`，用户可以将自己的 NNI 实验打包为一个压缩包，之后用户可以在其他机器上通过 `nnictl experiment load` 来加载该实验，从而实现了同一个 NNI 实验在不同机器之间的共享。NNI v1.8 还对 nnictl 中的其他命令进行了改进，例如现在 `nnictl experiment export` 命令可以通过添加参数 `--intermediate` 来同时导出每个 Trial 的中间结果，以及在 `nnictl trial ls` 命令中可以通过指定 `--head` 或 `--tail` 来列出性能最好或最差的那些 Trial。
+
 * nnicli
+
 NNI client (nnicli) 是 nnictl 的 python API，它为大多数常用的 nnictl 命令提供了 python 接口。NNI v1.8 对 nnicli 进行了重构，对每个 NNI 实验通过一个 `Experiment` 实例来进行管理。通过 nnicli，用户可以直接通过 python 代码来控制他们的实验，收集实验结果并对实验结果进行进一步的分析。详细的使用方法请参见[文档](https://nni.readthedocs.io/en/latest/nnicli_ref.html)和[示例](https://github.com/microsoft/nni/blob/master/examples/notebooks/retrieve_nni_info_with_python.ipynb)。
 
 ## 神经网络架构搜索（NAS）
