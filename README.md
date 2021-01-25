@@ -1,5 +1,5 @@
 # nniutil
-本 Repo 主要是用来存放方便中文用户交流的一些辅助信息，当前只存放了：
+本 Repo 主要是用来存放方便 NNI 中文用户交流的一些辅助信息，当前只存放了：
 - 中文用户交流微信群二维码，每周更新（如果二维码过期了，欢迎提 issue 提醒） 
 - [NNI 概述](https://www.msra.cn/zh-cn/news/features/nni)
 - [中文 1.7 release tutorial](v1.7_tutorial/README.md)
