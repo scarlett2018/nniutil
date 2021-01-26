@@ -6,7 +6,6 @@
 - [中文 1.8 release tutorial](v1.8_tutorial/README.md)
 - [中文 2.0 release article](https://www.msra.cn/zh-cn/news/features/nni-2)
 - [NNI 团队背后的故事](https://www.msra.cn/zh-cn/news/features/nni-team)
-- [NNI 在线用户调查知情同意书](Online_Survey/Microsoft_Research_Project_Participation_Consent_Form.md)
 
 欢迎 NNI 的中文用户提中文的教程样例到这里共同探讨和学习。
 
